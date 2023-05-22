@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap");
+
+.App {
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+.header-container {
+  margin: 20px;
+}
+
+.header {
+  display: flex;
+}
+
+.symbol {
+  margin: 25px;
+}
+
+.add-to-cart img {
+  width: 70px;
+  position: absolute;
+  right: 2%;
+  top: 4%;
+}
+
+.cart-count {
+  z-index: 1;
+  right: 22px;
+  position: absolute;
+  top: 22px;
+  background-color: green;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: x-large;
+  color: #fff;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.items {
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.content {
+  margin: 35px;
+  border: 1px solid balck;
+  box-shadow: 1px 1px 8px 2px black;
+}
+
+.cardImage {
+  width: 320px;
+  height: 320px;
+}
+
+.cardTitle {
+  height: 100px;
+  align-items: center;
+}
