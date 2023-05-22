@@ -17,12 +17,19 @@
 .symbol {
   margin: 25px;
 }
+.symbol :hover {
+  transform: scale(1.1);
+}
 
 .add-to-cart img {
   width: 70px;
   position: absolute;
   right: 2%;
   top: 4%;
+}
+
+.add-to-cart :hover {
+  transform: scale(1.1);
 }
 
 .cart-count {
@@ -69,4 +76,9 @@
 .cardTitle {
   height: 100px;
   align-items: center;
+}
+
+.cardTitle :hover {
+  /* color: rgb(255, 0, 144); */
+  transform: scale(1.05);
 }

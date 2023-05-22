@@ -12,7 +12,7 @@ const Modal = () => {
   };
 
   function orderDone() {
-    alert("Order Successfully Done.");
+    alert("Ordered Successfully.");
   }
   return (
     <>
@@ -52,18 +52,16 @@ const Modal = () => {
               style={{ backgroundColor: "white", color: "black" }}
               className="modal-body"
             >
-              <table className="table table-bordered border-light table-striped ">
+              <table className="table table-bordered border-light table-striped">
                 {cart &&
-                  cart.map((product) => (
+                  cart.map((product, i) => (
                     <>
-                      <tbody>
+                      <tbody style={{ fontSize: "large" }}>
                         <tr
                           className="table-primary table-bordered border-light table-striped"
-                          key={product.id}
+                          key={i + 1}
                         >
-                          <th scope="row" style={{ fontSize: "large" }}>
-                            {product.id}
-                          </th>
+                          <th scope="row">{i + 1}</th>
                           <td>
                             <img
                               style={{ height: "40px", width: "40px" }}
@@ -71,10 +69,8 @@ const Modal = () => {
                               alt="img not found"
                             />
                           </td>
-                          <td style={{ fontSize: "large" }}>{product.title}</td>
-                          <td style={{ fontSize: "large" }}>
-                            ${product.price}
-                          </td>
+                          <td>{product.title}</td>
+                          <td style={{ color: "green" }}>${product.price}</td>
                           <td>
                             <button
                               onClick={() => deleteItem(product.id)}

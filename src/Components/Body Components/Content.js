@@ -43,7 +43,7 @@ const Content = () => {
         <Header />
         <section className="items">
           {!!products && products.length > 0 ? (
-            products.map((product, i) => {
+            products.map((product) => {
               return (
                 <>
                   <div key={product.id} className="content">
